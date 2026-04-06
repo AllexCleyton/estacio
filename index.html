@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música - App de Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">♪ Muse</div>
+            
+            <!-- Navegação Principal -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">🏠 Início</a></li>
+                    <li><a href="#search">🔍 Pesquisar</a></li>
+                    <li><a href="#library">📚 Sua Biblioteca</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Biblioteca -->
+            <section class="library">
+                <div class="library-header">
+                    <h2>SUA BIBLIOTECA</h2>
+                    <div class="library-controls">
+                        <button title="Criar">➕</button>
+                        <button title="Opcões">⋯</button>
+                    </div>
+                </div>
+                
+                <article class="library-item">
+                    <h3>Minhas Músicas</h3>
+                    <p>50 músicas salvas</p>
+                </article>
+                
+                <article class="library-item">
+                    <h3>Rock Clássico</h3>
+                    <p>Playlist • 23 músicas</p>
+                </article>
+                
+                <article class="library-item">
+                    <h3>Dia de Produtividade</h3>
+                    <p>Playlist • 45 músicas</p>
+                </article>
+                
+                <article class="library-item">
+                    <h3>Artistas Favoritos</h3>
+                    <p>18 artistas curtidos</p>
+                </article>
+                
+                <article class="library-item">
+                    <h3>Descobertas Recentes</h3>
+                    <p>12 novos artistas</p>
+                </article>
+                
+                <article class="library-item">
+                    <h3>Podcast Preferidos</h3>
+                    <p>5 podcasts salvos</p>
+                </article>
+            </section>
+        </aside>
+        
+        <!-- Conteúdo Principal -->
+        <main class="content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="search-container">
+                    <input type="search" placeholder="O que você quer ouvir?">
+                </div>
+                <div class="user-menu">
+                    <button>Explorar Premium</button>
+                    <button>👤 Perfil</button>
+                </div>
+            </header>
+            
+            <!-- Content Area -->
+            <section class="content-area">
+                <!-- Home Section -->
+                <section id="home-content" class="results-section active">
+                    <h1 style="margin-bottom: 24px; font-size: 32px;">Bom dia!</h1>
+                    
+                    <h2 style="font-size: 18px; margin-bottom: 16px; color: #b3b3b3;">Ouvidas Recentemente</h2>
+                    <div class="results-grid">
+                        <article class="result-card">
+                            <div class="result-card-image">🎵</div>
+                            <h3>Músicas Favoritas</h3>
+                            <p>Playlist • 2345 curtidas</p>
+                        </article>
+                        <article class="result-card">
+                            <div class="result-card-image">🎸</div>
+                            <h3>Rock Essencial</h3>
+                            <p>Playlist • 1203 curtidas</p>
+                        </article>
+                        <article class="result-card">
+                            <div class="result-card-image">🎹</div>
+                            <h3>Jazz Café</h3>
+                            <p>Playlist • 845 curtidas</p>
+                        </article>
+                        <article class="result-card">
+                            <div class="result-card-image">🎧</div>
+                            <h3>Relaxamento Puro</h3>
+                            <p>Playlist • 567 curtidas</p>
+                        </article>
+                    </div>
+                </section>
+                
+                <!-- Search Results -->
+                <section id="search-content" class="results-section">
+                    <h1 style="margin-bottom: 24px; font-size: 28px;">Pesquisar</h1>
+                    
+                    <!-- Search Tabs -->
+                    <div class="search-tabs">
+                        <button class="tab-btn active" data-tab="all">Tudo</button>
+                        <button class="tab-btn" data-tab="artists">Artistas</button>
+                        <button class="tab-btn" data-tab="playlists">Playlists</button>
+                        <button class="tab-btn" data-tab="tracks">Músicas</button>
+                        <button class="tab-btn" data-tab="albums">Álbuns</button>
+                        <button class="tab-btn" data-tab="podcasts">Podcasts</button>
+                    </div>
+                    
+                    <!-- Tudo -->
+                    <div id="tab-all" class="tab-content active">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px; color: #b3b3b3;">Artistas</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista 1</h3>
+                                <p>Artista</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista 2</h3>
+                                <p>Artista</p>
+                            </article>
+                        </div>
+                        
+                        <h2 style="font-size: 16px; margin: 20px 0 12px; color: #b3b3b3;">Playlists</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎵</div>
+                                <h3>Playlist 1</h3>
+                                <p>Por usuário • 45 músicas</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎵</div>
+                                <h3>Playlist 2</h3>
+                                <p>Por usuário • 32 músicas</p>
+                            </article>
+                        </div>
+                        
+                        <h2 style="font-size: 16px; margin: 20px 0 12px; color: #b3b3b3;">Músicas</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">♪</div>
+                                <h3>Música 1</h3>
+                                <p>Artista • 3:45</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">♪</div>
+                                <h3>Música 2</h3>
+                                <p>Artista • 4:12</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Artistas -->
+                    <div id="tab-artists" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Artistas Encontrados</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista A</h3>
+                                <p>Artista</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista B</h3>
+                                <p>Artista</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista C</h3>
+                                <p>Artista</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Playlists -->
+                    <div id="tab-playlists" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Playlists Encontradas</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎵</div>
+                                <h3>Playlist A</h3>
+                                <p>Por usuário • 60 músicas</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎵</div>
+                                <h3>Playlist B</h3>
+                                <p>Por curador • 40 músicas</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎵</div>
+                                <h3>Playlist C</h3>
+                                <p>Por curador • 55 músicas</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Músicas -->
+                    <div id="tab-tracks" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Músicas Encontradas</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">♪</div>
+                                <h3>Música A</h3>
+                                <p>Artista • 3:58</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">♪</div>
+                                <h3>Música B</h3>
+                                <p>Artista • 4:25</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">♪</div>
+                                <h3>Música C</h3>
+                                <p>Artista • 3:32</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Álbuns -->
+                    <div id="tab-albums" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Álbuns Encontrados</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">💿</div>
+                                <h3>Álbum A</h3>
+                                <p>Artista • 2024</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">💿</div>
+                                <h3>Álbum B</h3>
+                                <p>Artista • 2023</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Podcasts -->
+                    <div id="tab-podcasts" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Podcasts Encontrados</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎙️</div>
+                                <h3>Podcast A</h3>
+                                <p>50 episódios</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎙️</div>
+                                <h3>Podcast B</h3>
+                                <p>120 episódios</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Library Section -->
+                <section id="library-content" class="results-section">
+                    <h1 style="margin-bottom: 24px; font-size: 28px;">Sua Biblioteca</h1>
+                    
+                    <div class="search-tabs">
+                        <button class="tab-btn active" data-tab="library-all">Tudo</button>
+                        <button class="tab-btn" data-tab="library-playlists">Playlists</button>
+                        <button class="tab-btn" data-tab="library-artists">Artistas</button>
+                        <button class="tab-btn" data-tab="library-albums">Álbuns</button>
+                        <button class="tab-btn" data-tab="library-podcasts">Podcasts</button>
+                    </div>
+                    
+                    <!-- Tudo -->
+                    <div id="tab-library-all" class="tab-content active">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px; color: #b3b3b3;">Minhas Playlists</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">❤️</div>
+                                <h3>Minhas Músicas</h3>
+                                <p>50 músicas</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎵</div>
+                                <h3>Rock Clássico</h3>
+                                <p>23 músicas</p>
+                            </article>
+                        </div>
+                        
+                        <h2 style="font-size: 16px; margin: 20px 0 12px; color: #b3b3b3;">Artistas Seguidos</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista Seguido 1</h3>
+                                <p>Artista</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista Seguido 2</h3>
+                                <p>Artista</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Playlists -->
+                    <div id="tab-library-playlists" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Minhas Playlists</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">➕</div>
+                                <h3>Criar Playlist</h3>
+                                <p>Nova playlist</p>
+                            </article>
+                            <article class="result-card">
+                                <div class="result-card-image">❤️</div>
+                                <h3>Minhas Músicas</h3>
+                                <p>50 músicas</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Artistas -->
+                    <div id="tab-library-artists" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Artistas Seguidos</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎤</div>
+                                <h3>Artista 1</h3>
+                                <p>Artista</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Álbuns -->
+                    <div id="tab-library-albums" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Álbuns Salvos</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">💿</div>
+                                <h3>Álbum Salvo 1</h3>
+                                <p>Artista</p>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Podcasts -->
+                    <div id="tab-library-podcasts" class="tab-content" style="display: none;">
+                        <h2 style="font-size: 16px; margin: 20px 0 12px;">Podcasts Salvos</h2>
+                        <div class="results-grid">
+                            <article class="result-card">
+                                <div class="result-card-image">🎙️</div>
+                                <h3>Podcast Salvo 1</h3>
+                                <p>45 episódios</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
