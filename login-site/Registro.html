@@ -1,7 +1,27 @@
-<form>
-    <label>Nome de usuário:</label>
-    <input type="text" id="username" name="username" required>
-    <label>Senha:</label>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Cadastrar</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <form id="registerForm">
+            <h2>Cadastro</h2>
+
+            <input type="text" id="name" placeholder="nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+
+            <button type="submit">Cadastrar</button>
+
+            <p id="message"></p>
+
+            <p><a href="login.html">Já tenho uma conta</a></p>
+
+        </form>
+    </main>
+    <script src="scripts/app-local.js"></script>
+</body>
+</html>
