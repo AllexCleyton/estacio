@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: linear-gradient(135deg, #4fac4f, #00f2fe);
+    background-color: linear-gradient(135deg, #4facef, #00f2fe);
 }
 /* container */
 .container {
@@ -26,23 +26,27 @@ body {
 }
 input {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.7rem;
     margin: 0.5rem 0;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: 0.3s;
+    border-radius: 6px;
 }
+input:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* botão */
 button {
     width: 100%;
-    padding: 0.75rem;
-    background-color: #4fac4f;
+    padding: 0.7rem;
+    margin-top: 10px;
+    background-color: #4facef;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
-}
-p {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+}   
+button:hover {
+    background-color: #07a3ca;
 }
